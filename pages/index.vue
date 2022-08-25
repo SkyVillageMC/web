@@ -179,6 +179,12 @@ export default Vue.extend({
         tasks: [`Tulajdonos`, `Ő épít`],
         discord: `SmilingSoda7866#4818`,
         imgUrl: `/team/smillingsoda.png`
+      }, {
+        name: `Levi04`,
+        bio: `Jöttünk láttuk, visszamentünk?`,
+        tasks: [`Tulajdonos`, `Ő is valaki`],
+        discord: `Levi04#8298`,
+        imgUrl: `/team/smillingsoda.png`
       }
     ]
   })
