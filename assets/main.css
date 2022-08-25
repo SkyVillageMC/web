@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
     accent-color: #ffdd19;
     scrollbar-color: #ffdd19 #303741;
 }
