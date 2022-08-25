@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply scroll-smooth;
+    accent-color: #ffdd19;
+    scrollbar-color: #ffdd19 #303741;
+}
