@@ -13,7 +13,7 @@
           "
         />
         <div>
-          <h1 class="text-5xl font-bold">Új, modern szerver!</h1>
+          <h1 class="text-5xl font-bold h-16">Új, modern szerver!</h1>
           <p class="py-6">
             Egy egyedi szerver, ahhol nem a mennyiségen, hanem a minőségen van a
             hangsúly.
