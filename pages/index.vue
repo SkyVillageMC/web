@@ -13,7 +13,7 @@
           "
         />
         <div>
-          <h1 class="text-5xl font-bold h-16">Új, modern szerver!</h1>
+          <h1 class="text-5xl font-bold h-16 overflow-fix-2">Új, modern szerver!</h1>
           <p class="py-6">
             Egy egyedi szerver, ahhol nem a mennyiségen, hanem a minőségen van a
             hangsúly.
@@ -139,7 +139,7 @@
       </g>
     </svg>
     <div class="min-h-screen flex flex-col">
-      <h1 class="text-center text-4xl md:text-5xl font-bold text-white my-4 mb-8">Az epikus csapatunk</h1>
+      <h1 class="text-center text-4xl md:text-5xl font-bold text-white my-4 mb-8 overflow-fix">Az epikus csapatunk</h1>
       <div class="mx-12 flex flex-row flex-wrap justify-center">
         <TeamMemberCard v-for="u in team" v-bind:key="u.name" :user="u" />
       </div>
