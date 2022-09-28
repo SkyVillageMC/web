@@ -18,7 +18,7 @@
             Egy egyedi szerver, ahhol nem a mennyiségen, hanem a minőségen van a
             hangsúly.
           </p>
-          <button class="btn btn-primary">Regisztrálok!</button>
+          <button class="btn btn-primary" @click="yes()">Regisztrálok!</button>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@
       </g>
     </svg>
     <div class="bg-epik-orange min-h-screen flex flex-col" id="features">
-      <h1 class="text-center text-4xl md:text-5xl font-bold text-white mb-4 overflow-hidden">
+      <h1 class="text-center text-4xl md:text-5xl font-bold text-white mb-4 overflow-hidden overflow-fix">
         Miért játsz nálunk?
       </h1>
       <div class="flex-grow"></div>
@@ -187,6 +187,11 @@ export default Vue.extend({
         imgUrl: `/team/levi.png`
       }
     ]
-  })
+  }),
+  methods: {
+    yes() {
+      alert(`Bendi lusta volt megcsinálni ezt a gombot.`)
+    }
+  }
 });
 </script>
