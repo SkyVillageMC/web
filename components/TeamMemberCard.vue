@@ -11,10 +11,8 @@
       </div>
       <div class="card-actions mt-2">
         <a
-          :href="user?.website"
           v-if="user?.website"
-          class="tooltip tooltip-bottom"
-          data-tip="Weboldal"
+          :href="user?.website"
           target="_blank"
         >
           <svg
@@ -35,9 +33,6 @@
         <a
           :href="`https://github.com/${user?.github}`"
           v-if="user?.github"
-          class="tooltip tooltip-bottom before:z-50"
-          style="--tw-content: 'Github'"
-          data-tip="Github"
           target="_blank"
         >
           <svg
@@ -58,8 +53,6 @@
         ></a>
         <a
           v-if="user?.discord"
-          class="tooltip tooltip-bottom"
-          data-tip="Discord (kattints a másoláshoz)"
           @click="copyDc()"
         >
           <svg
