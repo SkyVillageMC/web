@@ -7,14 +7,12 @@
       <h2 class="card-title">{{ user.name }}</h2>
       <p>{{ user.bio }}</p>
       <div class="flex flex-row flex-wrap">
-        <span class="badge mx-1 mt-2" v-for="t in user.tasks" :key="t">{{ t }}</span>
+        <span class="badge mx-1 mt-2 overflow-hidden" v-for="t in user.tasks" :key="t">{{ t }}</span>
       </div>
       <div class="card-actions mt-2">
         <a
-          :href="user?.website"
           v-if="user?.website"
-          class="tooltip tooltip-bottom"
-          data-tip="Weboldal"
+          :href="user?.website"
           target="_blank"
         >
           <svg
@@ -35,8 +33,6 @@
         <a
           :href="`https://github.com/${user?.github}`"
           v-if="user?.github"
-          class="tooltip tooltip-bottom"
-          data-tip="Github"
           target="_blank"
         >
           <svg
@@ -57,8 +53,6 @@
         ></a>
         <a
           v-if="user?.discord"
-          class="tooltip tooltip-bottom"
-          data-tip="Discord (kattints a másoláshoz)"
           @click="copyDc()"
         >
           <svg
