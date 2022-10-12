@@ -7,13 +7,3 @@
     accent-color: #ffdd19;
     scrollbar-color: #ffdd19 #303741;
 }
-
-@layer utilities {
-    .overflow-fix {
-        @apply leading-normal !important;
-    }
-
-    .overflow-fix-2 {
-        @apply leading-[1.1] !important;
-    }
-}
