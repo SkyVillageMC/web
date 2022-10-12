@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+body {
     @apply scroll-smooth overflow-x-hidden;
     accent-color: #ffdd19;
     scrollbar-color: #ffdd19 #303741;
