@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+html {
     @apply scroll-smooth overflow-x-hidden;
     accent-color: #ffdd19;
     scrollbar-color: #ffdd19 #303741;
+}
+
+::-webkit-scrollbar {
+    color: #303741;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffdd19;
 }
