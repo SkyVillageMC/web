@@ -49,7 +49,7 @@
       </g>
     </svg>
     <div class="bg-epik-orange min-h-screen flex flex-col" id="features">
-      <h1 class="text-center text-4xl md:text-5xl font-bold text-white mb-4 overflow-hidden">
+      <h1 class="text-center text-4xl md:text-5xl font-bold text-white mb-4">
         Miért játsz nálunk?
       </h1>
       <div class="flex-grow"></div>
