@@ -139,11 +139,14 @@
         />
       </g>
     </svg>
-    <div class="min-h-screen flex flex-col">
-      <h1 class="text-center text-4xl md:text-5xl font-bold text-white my-4 mb-8">Az epikus csapatunk</h1>
-      <div class="mx-12 flex flex-row flex-wrap justify-center">
+    <div class="min-h-screen flex flex-col" id="team">
+      <div class="flex-grow"></div>
+      <h1 class="text-center text-4xl md:text-5xl font-bold text-white my-4 mt-4">Az epikus csapatunk</h1>
+      <p class="text-center text-gray-200 mb-8">Ezeknek az embereknek köszönhető hogy ilyen minőségi ez a szerver.</p>
+      <div class="mt-12 mb-4 flex flex-row flex-wrap justify-center">
         <TeamMemberCard v-for="u in team" v-bind:key="u.name" :user="u" />
       </div>
+      <div class="flex-grow"></div>
     </div>
     <Footer />
   </div>

@@ -34,7 +34,7 @@
         >
           <li><NuxtLint to="/">Főoldal</NuxtLint></li>
           <li><NuxtLint to="/#features">Miért?</NuxtLint></li>
-          <li><NuxtLint to="/#">Izé</NuxtLint></li>
+          <li><NuxtLint to="/#team">Csapatunk</NuxtLint></li>
           <li><NuxtLink to="/auth/login">Bejelentkezés</NuxtLink></li>
           <li><NuxtLink to="/auth/register">Regisztráció</NuxtLink></li>
 
@@ -46,7 +46,7 @@
       <ul class="menu menu-horizontal p-0">
         <li><NuxtLint to="/">Főoldal</NuxtLint></li>
         <li><a href="/#features">Miért?</a></li>
-        <li><NuxtLint to="/#">Izé</NuxtLint></li>
+        <li><a href="/#team">Csapatunk</a></li>
       </ul>
     </div>
     <div class="navbar-end">
