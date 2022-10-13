@@ -6,7 +6,12 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: `meta`, content: `Egy nagyon profi minecraft szerver.` },
+      { name: `og:title`, content: `SkyVillage` },
+      { name: `og:type`, content: `website` },
+      { name: `og:image`, content: `https://skyvillage.hu/logo-large.webp`},
+      { name: `og:url`, content: `https://skyvillage.hu` }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

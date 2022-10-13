@@ -11,6 +11,7 @@
             hover:-translate-y-5 hover:shadow-2xl
             transition-all
           "
+          alt="A szerver logója"
         />
         <div>
           <h1 class="text-5xl font-bold">Új, modern szerver!</h1>
