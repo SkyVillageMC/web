@@ -18,10 +18,10 @@
     </div>
     <div>
       <span class="footer-title">Szolgáltatások</span>
-      <a class="link link-hover">Még</a>
-      <a class="link link-hover">nincs</a>
-      <a class="link link-hover">itt</a>
-      <a class="link link-hover">semmi.</a>
+      <a class="link link-hover" href="#">Még</a>
+      <a class="link link-hover" href="#">nincs</a>
+      <a class="link link-hover" href="#">itt</a>
+      <a class="link link-hover" href="#">semmi.</a>
     </div>
     <div>
       <span class="footer-title">Elérhetőségek</span>
