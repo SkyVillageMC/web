@@ -5,9 +5,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Egy nagyon profi minecraft szerver.' },
       { name: 'format-detection', content: 'telephone=no' },
-      { name: `meta`, content: `Egy nagyon profi minecraft szerver.` },
       { name: `og:title`, content: `SkyVillage` },
       { name: `og:type`, content: `website` },
       { name: `og:image`, content: `https://skyvillage.hu/logo-large.webp`},
