@@ -10,7 +10,8 @@ export default {
       { name: `og:title`, content: `SkyVillage` },
       { name: `og:type`, content: `website` },
       { name: `og:image`, content: `https://skyvillage.hu/logo-large.webp`},
-      { name: `og:url`, content: `https://skyvillage.hu` }
+      { name: `og:url`, content: `https://skyvillage.hu` },
+      { name: `theme-color`, content: `#ffdd19` }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -54,7 +55,8 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'hu'
+      lang: 'hu',
+      name: 'SkyVillage'
     }
   },
 
