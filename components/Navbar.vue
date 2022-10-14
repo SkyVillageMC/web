@@ -32,9 +32,9 @@
             w-[calc(100vw-1rem)]
           "
         >
-          <li><NuxtLint to="/">Főoldal</NuxtLint></li>
-          <li><NuxtLint to="/#features">Miért?</NuxtLint></li>
-          <li><NuxtLint to="/#team">Csapatunk</NuxtLint></li>
+          <li><NuxtLink to="/">Főoldal</NuxtLink></li>
+          <li><a href="/#features">Miért?</a></li>
+          <li><a href="/#team">Csapatunk</a></li>
           <li><NuxtLink to="/auth/login">Bejelentkezés</NuxtLink></li>
           <li><NuxtLink to="/auth/register">Regisztráció</NuxtLink></li>
 
@@ -44,7 +44,7 @@
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal p-0">
-        <li><NuxtLint to="/">Főoldal</NuxtLint></li>
+        <li><NuxtLink to="/">Főoldal</NuxtLink></li>
         <li><a href="/#features">Miért?</a></li>
         <li><a href="/#team">Csapatunk</a></li>
       </ul>

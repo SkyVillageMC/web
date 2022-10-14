@@ -15,3 +15,24 @@ html {
 ::-webkit-scrollbar-thumb {
     background: #ffdd19;
 }
+
+@layer utilities {
+    @keyframes shake {
+        0%, 100% {
+            @apply translate-y-0;
+        }
+
+        25% {
+            @apply translate-y-1/4;
+        }
+
+        75% {
+            @apply -translate-y-1/4;
+        }
+    }
+
+    .animate-shake {
+        animation: shake 350ms 1;
+        animation-timing-function: cubic-bezier(.65,0,.35,1);
+    }
+}
