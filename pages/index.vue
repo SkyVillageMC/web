@@ -6,6 +6,7 @@
           src="/logo-large.webp"
           class="
             max-w-sm max-h-sm
+            w-full
             rounded-lg
             shadow-xl
             hover:-translate-y-5 hover:shadow-2xl
@@ -19,7 +20,7 @@
             Egy egyedi szerver, ahhol nem a mennyiségen, hanem a minőségen van a
             hangsúly.
           </p>
-          <button class="btn btn-primary">Regisztrálok!</button>
+          <NuxtLink class="btn btn-primary" to="/auth/register">Regisztrálok!</NuxtLink>
         </div>
       </div>
     </div>
