@@ -44,12 +44,13 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/auth-next'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: 'https://api.skyvillage.hu/',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -57,6 +58,41 @@ export default {
     manifest: {
       lang: 'hu',
       name: 'SkyVillage'
+    }
+  },
+
+  auth: {
+    redirect: {
+      login: '/auth/login',
+      logout: '/',
+      home: '/dashboard'
+    },
+    strategies: {
+      local: {
+        scheme: 'refresh',
+        token: {
+          property: 'accessToken',
+          maxAge: 1800,
+          global: true,
+          type: 'Bearer'
+        },
+        refreshToken: {
+          property: 'refreshToken',
+          data: 'refreshToken',
+          maxAge: 60 * 60 * 24 * 30
+        },
+        user: {
+          property: '',
+          autoFetch: true
+        },
+        endpoints: {
+          login: { url: '/api/auth/login', method: 'post' },
+          refresh: { url: '/api/auth/refresh', method: 'post' },
+          user: { url: '/api/user/me', method: 'get' },
+          logout: { url: '/api/auth/logout', method: 'post' }
+        },
+        // autoLogout: false
+      }
     }
   },
 
