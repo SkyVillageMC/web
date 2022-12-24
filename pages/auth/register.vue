@@ -86,12 +86,24 @@
 
       <div class="form-control">
         <label class="label cursor-pointer">
-          <input type="checkbox" checked="checked" class="checkbox" v-model="acceptedStuff" />
+          <input
+            type="checkbox"
+            checked="checked"
+            class="checkbox"
+            v-model="acceptedStuff"
+          />
           <span class="label-text">Eladom a lelkemet is Bill Gécnek</span>
         </label>
       </div>
 
-      <button class="btn btn-primary w-full mt-6" @click="register()" :class="{'btn-disabled' : !canRegister}" :disabled="!canRegister">Regisztráció</button>
+      <button
+        class="btn btn-primary w-full mt-6"
+        @click="register()"
+        :class="{ 'btn-disabled': !canRegister }"
+        :disabled="!canRegister"
+      >
+        Regisztráció
+      </button>
     </div>
     <spacer />
   </div>
@@ -121,7 +133,7 @@ export default Vue.extend({
     passwordAgainError: function () {
       return !this.passwordAgain.match(/^.{8,128}$/g);
     },
-    canRegister: function() {
+    canRegister: function () {
       let uV = this.username.match(/^([A-z0-9_-]){3,15}$/g);
       let eV = this.email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g);
       let pV = this.password.match(/^.{8,128}$/g);
@@ -129,12 +141,37 @@ export default Vue.extend({
       let pM = this.password == this.passwordAgain;
 
       return uV && eV && pV && paV && pM && this.acceptedStuff;
-    }
+    },
   },
   methods: {
-    register() {
-      alert("A regisztráció még nem elérhető. További információk a Discord szerverünkön.")
+    async register() {
+      try {
+        const token = await this.$recaptcha.execute("login");
+        console.log("ReCaptcha token:", token);
+
+        await this.$axios.put(`/register`, {
+          username: this.username,
+          email: this.email,
+          password: this.password,
+          captcha: token
+        })
+
+        this.$router.push(`/api/auth/confirm-email?email=${this.email}`);
+      } catch (error) {
+        console.log("Login error:", error);
+        alert("Hiba történt!")
+      }
+    },
+  },
+  beforeDestroy() {
+    this.$recaptcha.destroy();
+  },
+  async mounted() {
+    try {
+      await this.$recaptcha.init();
+    } catch (e) {
+      console.error(e);
     }
-  }
+  },
 });
 </script>

@@ -44,13 +44,19 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/auth-next'
+    '@nuxtjs/auth-next',
+    '@nuxtjs/recaptcha'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: 'https://api.skyvillage.hu/',
+  },
+
+  recaptcha: {
+    siteKey: process.env.CAPTCHA_SITE_KEY,
+    version: 3
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -98,5 +104,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  publicRuntimeConfig: {
+    recaptcha: {
+      siteKey: process.env.CAPTCHA_SITE_KEY,
+      version: 3
+    },
   }
 }
