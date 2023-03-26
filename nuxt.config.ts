@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// noinspection TypeScriptUnresolvedVariable
 export default defineNuxtConfig({
     modules: [
         '@nuxtjs/tailwindcss',
@@ -36,6 +37,12 @@ export default defineNuxtConfig({
         }
     },
     auth: {
+        redirect: {
+            login: '/auth/login',
+            logout: '/',
+            home: '/dashboard',
+            callback: '/'
+        },
         strategies: {
             local: {
                 scheme: 'refresh',
