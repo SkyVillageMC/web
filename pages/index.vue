@@ -163,10 +163,10 @@
       name: `Bendi`,
       bio: `Mindent túlbonyolít.`,
       tasks: [`Tulajdonos`, `Fejlesztő`],
-      website: `https://bendi.cf`,
+      website: `https://bendi.tk`,
       github: `Bendimester23`,
       discord: `Bendi#9550`,
-      imgUrl: `/team/bendi.png`
+      imgUrl: `/team/bendi.webp`
     }, {
       name: `PetiDev`,
       bio: `igen (https://imgur.com/a/L1dhhb5)`,
@@ -174,19 +174,19 @@
       website: `https://petidev.tk`,
       github: `PetiDev`,
       discord: `<Peti/>#1182`,
-      imgUrl: `/team/peti.png`
+      imgUrl: `/team/peti.webp`
     }, {
       name: `SmillingSoda7866`,
       bio: `Gyenge felfogású aranyos lény.`,
       tasks: [`Tulajdonos`, `Ő épít`],
       discord: `SmilingSoda7866#4818`,
-      imgUrl: `/team/smillingsoda.png`
+      imgUrl: `/team/smillingsoda.webp`
     }, {
       name: `Levi04`,
       bio: `Jöttünk láttuk, visszamentünk?`,
       tasks: [`Tulajdonos`, `Ő is valaki`],
       discord: `Levi04#8298`,
-      imgUrl: `/team/levi.png`
+      imgUrl: `/team/levi.webp`
     }
   ])
 </script>
