@@ -17,6 +17,24 @@ export default defineNuxtConfig({
             secretKey: process.env.NUXT_TURNSTILE_SECRET_KEY || '',
         },
     },
+    pwa: {
+        manifest: {
+            lang: 'hu',
+            name: 'SkyVillage',
+            short_name: 'SkyVillage',
+            description: 'Egy új magyar minecraft szerver (lesz)',
+            display: 'standalone',
+            start_url: 'https://skyvillage.hu/',
+            theme_color: '#ffdd19',
+            background_color: '#2f3640',
+            icons: [{
+                src: '/icon.png',
+                type: 'image/png',
+                sizes: '512x512 256x256',
+                purpose: 'any'
+            }]
+        }
+    },
     auth: {
         strategies: {
             local: {
